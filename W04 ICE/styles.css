@@ -1,8 +1,10 @@
 body {
-    background-color: #87CEEB;
+    background-color: #6a90ff;
     font-family: Arial, sans-serif;
     text-align: center;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -13,6 +15,15 @@ h1 {
 h1:hover {
     color: black;
 }
+
+p {
+    margin: 20px 0;
+}
+
+li {
+    color:black
+}
+
 
 .quote {
     font-size: 1.5em;
