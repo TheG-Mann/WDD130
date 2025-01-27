@@ -28,11 +28,13 @@ li {
 .quote {
     font-size: 1.5em;
     margin: 20px 0;
+    font: caption;
 }
 
 .author {
     font-size: 1em;
     margin-top: 10px;
+    color: black;
 }
 
 .list {
