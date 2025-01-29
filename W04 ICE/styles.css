@@ -14,9 +14,9 @@ body {
 
 .container {
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     padding: 20px;
-    background-color: #6e90de;
+    background-color: #5da0d7;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -37,6 +37,12 @@ p {
 li {
     color: black;
     font: bold
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .quote {
@@ -62,7 +68,7 @@ li {
 }
 
 .image-container {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .image-container img {
