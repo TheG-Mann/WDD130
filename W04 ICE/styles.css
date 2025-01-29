@@ -1,10 +1,24 @@
 body {
-    background-color: #6a90ff;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
-    text-align: center;
     color: white;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #4a70cc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -21,14 +35,13 @@ p {
 }
 
 li {
-    color:black
+    color: black;
 }
-
 
 .quote {
     font-size: 1.5em;
     margin: 20px 0;
-    font: caption;
+    font-style: italic;
 }
 
 .author {
@@ -54,4 +67,6 @@ li {
 .image-container img {
     width: 200px;
     height: auto;
+    border: 2px solid white;
+    border-radius: 10px;
 }
