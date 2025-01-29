@@ -16,7 +16,7 @@ body {
     width: 90%;
     max-width: 600px;
     padding: 20px;
-    background-color: #4a70cc;
+    background-color: #6e90de;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,12 +36,13 @@ p {
 
 li {
     color: black;
+    font: bold
 }
 
 .quote {
     font-size: 1.5em;
     margin: 20px 0;
-    font-style: italic;
+    font: 100;
 }
 
 .author {
