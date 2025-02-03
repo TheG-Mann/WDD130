@@ -74,6 +74,4 @@ img {
 .image-container img {
     width: 200px;
     height: auto;
-    border: 2px solid white;
-    border-radius: 10px;
 }
