@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+    height: 100%;
     width: 90%;
     max-width: 700px;
     padding: 20px;
@@ -40,15 +41,15 @@ li {
 }
 
 img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    display: block;
+    width: 50px;
+    margin: 0 auto;
 }
 
 .quote {
-    font-size: 1.5em;
-    margin: 20px 0;
-    font: 100;
+    font-style: italic;
+    line-height: 2.6;
+    margin-bottom: 1.2em;
 }
 
 .author {
@@ -72,6 +73,6 @@ img {
 }
 
 .image-container img {
-    width: 200px;
+    width: 120px;
     height: auto;
 }
