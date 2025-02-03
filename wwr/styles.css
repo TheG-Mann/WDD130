@@ -43,3 +43,29 @@ img {
 h2, h3 {
     color: #555;
 }
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.activities, .thrill {
+    padding: 20px;
+    text-align: center;
+}
+
+.activity-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.activity {
+    flex: 1;
+    margin: 10px;
+}
+
+.activity img {
+    max-width: 100%;
+    border-radius: 8px;
+}
