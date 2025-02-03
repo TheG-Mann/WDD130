@@ -44,28 +44,16 @@ h2, h3 {
     color: #555;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+.social-media-icons {
+    margin-bottom: 10px;
 }
 
-.activities, .thrill {
-    padding: 20px;
-    text-align: center;
+.social-media-icons a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
-.activity-images {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.activity {
-    flex: 1;
-    margin: 10px;
-}
-
-.activity img {
-    max-width: 100%;
-    border-radius: 8px;
+.social-media-icons img {
+    width: 40px;
+    height: 40px;
 }
