@@ -48,8 +48,9 @@ img {
 
 .quote {
     font-style: italic;
-    line-height: 2.6;
+    line-height: 3.0;
     margin-bottom: 1.2em;
+    font-size: 1.5em;
 }
 
 .author {
