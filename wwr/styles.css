@@ -1,7 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('background.jpg');
     color: #333;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer {
@@ -25,6 +27,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 
 main {
@@ -38,10 +41,17 @@ main {
 img {
     max-width: 100%;
     border-radius: 8px;
+    box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+h1, h2, h3, p{
+    color: #d3d3d3;
+    margin: 0;
+=======
 h2, h3 {
     color: #555;
+>>>>>>> ea3d9dcf9a3f16f75ad8cebaaf967c71dacbdcf9
 }
 
 .social-media-icons {
@@ -56,4 +66,151 @@ h2, h3 {
 .social-media-icons img {
     width: 40px;
     height: 40px;
+<<<<<<< HEAD
+    padding-top: 15px;
+}
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.book, .join {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    background-color: #d9c2a3;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.msg {
+    background-color: #6f7364;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+footer {
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero .main-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+}
+
+.hero-content .book {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.sections {
+    display: block;
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+}
+
+.section-img {
+    width: 250px; /* Set the width to match the original size */
+    height: auto;
+}
+
+.icon-img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.more-thrill {
+    text-align: center;
+    padding: 20px;
+}
+
+.more-thrill .scenic-image {
+    width: 100%;
+    height: auto;
+}
+
+.more-thrill h2 {
+    font-size: 2em;
+}
+
+.more-thrill p {
+    font-size: 1.2em;
+}
+
+.more-thrill .join {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+=======
+>>>>>>> ea3d9dcf9a3f16f75ad8cebaaf967c71dacbdcf9
 }
