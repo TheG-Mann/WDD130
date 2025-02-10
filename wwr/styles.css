@@ -44,14 +44,9 @@ img {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 h1, h2, h3, p{
     color: #d3d3d3;
     margin: 0;
-=======
-h2, h3 {
-    color: #555;
->>>>>>> ea3d9dcf9a3f16f75ad8cebaaf967c71dacbdcf9
 }
 
 .social-media-icons {
@@ -211,6 +206,4 @@ footer .social img {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-=======
->>>>>>> ea3d9dcf9a3f16f75ad8cebaaf967c71dacbdcf9
 }
