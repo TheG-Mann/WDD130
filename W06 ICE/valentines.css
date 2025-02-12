@@ -1,0 +1,87 @@
+/* CSS - Name: "valentinestyles.css" */
+body {
+    background-color: #ffe6f2;
+    color: #c71585;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 2px solid #ff1493;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #ff69b4;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ff1493;
+    border-radius: 10px;
+    background-color: #ffe6e6;
+}
+
+h2 {
+    color: #ff1493;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #800000;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff69b4;
+    color: #fff;
+    border-radius: 0 0 15px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+}
