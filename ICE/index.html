@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherries Design</title>
+<style >
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    z-index: 1;
+    letter-spacing: .2em;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    font-size: 100px;
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-size: 80px;
+    letter-spacing: 10px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    color: darkred;
+
+}
+
+img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+}
+
+#graybox {
+    background-color: gray;
+    grid-column: 2/3;
+    grid-row: 1/3;
+}   
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tart & Sweet</h1>
+        <img src="cherries.png" alt="Cherries">
+        <div id="graybox"></div>
+        <h2>Cherries</h2>
+        </div>
+    </div>
+ </body>
+</html>
