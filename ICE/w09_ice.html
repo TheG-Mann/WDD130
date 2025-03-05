@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            margin: 0;
+        }
+
+        .card {
+            width: 380px;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            max-height: 275px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .date {
+            color: #3b82f6;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .description {
+            font-size: 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .footer {
+            display: flex;
+            background-color: #1e3a8a;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer div {
+            flex: 1;
+            padding: 12px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer div:last-child {
+            border-right: none;
+        }
+
+        .footer span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="w09_ice_img.jpg" alt="Post Image">
+        <div class="content">
+            <div class="date">3 weeks ago</div>
+            <div class="title">Post Three</div>
+            <div class="description">
+                This would be some text to go here and tell you about this awesome article that they should definitely read. This would be some text to go here and tell you about this awesome article that they should definitely read. This would be some text to go here.
+            </div>
+        </div>
+        <div class="footer">
+            <div><span>5m</span><br>READ</div>
+            <div><span>2031</span><br>VIEWS</div>
+            <div><span>15</span><br>COMMENTS</div>
+        </div>
+    </div>
+ </body>
+</html>
