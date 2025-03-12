@@ -125,6 +125,13 @@ p {
     color: #000000;
 }
 
+.logo {
+    width: 10%;
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
 /* More Thrill Section */
 .more-thrill {
     background-color: #c2a471;
@@ -134,26 +141,31 @@ p {
 
 .thrill-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers both elements horizontally */
+    align-items: center; /* Centers both elements vertically */
     position: relative;
     flex-wrap: wrap;
 }
 
 .scenic-image {
-    width: 90%;
+    width: 33.33%; /* Reduces the image size to 1/3rd */
     object-fit: cover;
     border-radius: 10px;
+    position: relative;
+    z-index: 1; /* Ensures it's layered properly under the green box */
+    margin-right: -10%; /* Moves the image slightly to the left */
 }
 
 .thrill-text {
-    position: absolute;
+    position: relative;
     background-color: #3d5932;
     color: white;
     padding: 20px;
     border-radius: 5px;
-    width: 50%;
+    width: 33.33%; /* Sets the width to one-third of the container */
     text-align: left;
+    z-index: 2;
+    margin-left: -10%; /* Keeps the overlap with the image */
 }
 
 .thrill-text h2 {
