@@ -10,12 +10,11 @@
     --heading-font: 'IM Fell French Canon SC', serif;
     --paragraph-font: 'Lato', 'Helvetica', sans-serif;
 
-    --headline-color-on-white: #f72585;
+    --headline-color-on-white: #a0005e;
     --headline-color-on-color: white;
-    --paragraph-color-on-white: #f72585;
+    --paragraph-color-on-white: #333;
     --paragraph-color-on-color: white;
-    --paragraph-background-color: #f72585;
-    --nav-link-color: #f72585;
+    --nav-link-color: white;
     --nav-background-color: #b5179e;
     --nav-hover-link-color: white;
     --nav-hover-background-color: #f72585;
@@ -29,7 +28,7 @@ body {
     font-size: 1rem;
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    background-color: #3a3a3a;
+    background-color: #4a4a4a;
     text-align: left;
 }
 
@@ -46,7 +45,7 @@ img {
 header {
     background-color: var(--primary-color);
     color: var(--headline-color-on-color);
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     border-radius: 8px;
 }
@@ -56,23 +55,21 @@ header h1 {
     font-size: 2.5rem;
 }
 
-header h2, header h3 {
+header h2 {
     margin: 5px 0;
     font-size: 1.2rem;
 }
 
 /* Navigation styles */
 nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     list-style-type: none;
     padding: 0;
     margin: 0;
     background-color: var(--nav-background-color);
-    overflow: hidden;
     border-radius: 8px;
-}
-
-nav ul li {
-    float: left;
 }
 
 nav ul li a {
@@ -91,7 +88,7 @@ nav ul li a:hover {
 /* Main content styling */
 main {
     padding: 20px;
-    background-color: rgb(59, 59, 59);
+    background-color: #595959;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -131,7 +128,7 @@ footer {
     margin-top: 20px;
     color: white;
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     border-radius: 8px;
 }
@@ -173,12 +170,8 @@ tr:hover {
     }
 
     nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        float: none;
-        display: inline-block;
+        flex-direction: column;
+        align-items: center;
     }
 
     main {
