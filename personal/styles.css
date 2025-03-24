@@ -28,7 +28,8 @@ body {
     font-size: 1rem;
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    background-color: #4a4a4a;
+    background: url('retro-nostalgia.jpg') no-repeat center center fixed;
+    background-size: cover;
     text-align: left;
 }
 
