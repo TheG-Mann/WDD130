@@ -1,228 +1,99 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-/* Root variables for colors and fonts */
+/* Root variables */
 :root {
     --primary-color: #f72585;
     --secondary-color: #b5179e;
-    --accent1-color: #7209b7;
-    --accent2-color: #480ca8;
+    --accent-color: #7209b7;
 
     --heading-font: 'IM Fell French Canon SC', serif;
-    --paragraph-font: 'Lato', 'Helvetica', sans-serif;
+    --body-font: 'Lato', 'Helvetica', sans-serif;
 
-    --headline-color-on-white: #a0005e;
-    --headline-color-on-color: white;
-    --paragraph-color-on-white: #333;
-    --paragraph-color-on-color: white;
-    --nav-link-color: white;
-    --nav-background-color: #b5179e;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #f72585;
+    --text-color: white;
+    --background-color: #333;
 }
 
 /* General body styling */
 body {
     max-width: 960px;
     margin: 0 auto;
-    padding: 2em;
-    font-size: 1rem;
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
+    font-family: var(--body-font);
+    color: var(--text-color);
     background: url('retro-nostalgia.jpg') no-repeat center center fixed;
     background-size: cover;
-    text-align: left;
-}
-
-/* Image styling */
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Header styling with expanded height for the title */
-header {
-    background: url('site-plan.png') no-repeat center center;
-    background-size: cover; /* Ensures the logo scales properly */
-    color: var(--headline-color-on-color);
-    padding: 100px 30px; /* Increased padding at the top */
     text-align: center;
-    border-radius: 8px;
-    position: relative; /* Keeps content layered correctly */
-    overflow: hidden; /* Prevents content overflow */
+    padding: 20px;
 }
 
-/* Overlay effect for better contrast */
-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* Adds subtle contrast for readability */
-    z-index: 1;
-    pointer-events: none; /* Ensures the overlay doesn't block interactions */
-}
-
-/* Text adjustments for better spacing and visibility */
-header h1, header h2 {
-    position: relative;
-    z-index: 2; /* Ensure text is above the overlay */
-    margin: 0;
-}
-
-header h1 {
-    font-size: 4rem; /* Enlarged text for prominence */
-    margin-bottom: 20px; /* Space below the title */
-}
-
-header h2 {
-    font-size: 1.5rem;
-    margin-bottom: 40px; /* Extra space to separate the header from navigation */
-}
-
-/* Navigation styling positioned beneath the header */
-nav {
-    margin-top: -100px; /* Adjust space between header and navigation */
-    position: relative;
-    z-index: 3; /* Ensures visibility */
-}
-
+/* Navigation styling */
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    list-style-type: none;
+    list-style: none;
     padding: 10px 0;
     margin: 0;
-    background-color: var(--nav-background-color);
+    background-color: var(--primary-color);
     border-radius: 8px;
 }
 
 nav ul li a {
-    display: block;
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 14px 20px;
+    color: var(--text-color);
     text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
+    background-color: var(--accent-color);
 }
 
-/* Main content styling */
-main {
-    padding: 20px;
-    background-color: #595959;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-h2, h3 {
-    font-family: var(--heading-font);
-}
-
-h2 {
-    color: var(--primary-color);
+/* Logo styling */
+.logo {
     text-align: center;
+    margin: 20px 0;
 }
 
-h3 {
-    color: var(--secondary-color);
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    margin: 0 0 1em;
-}
-
-/* Section Styles */
+/* Section styling */
 section {
-    margin-bottom: 2em;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Horizontal rule styling */
-hr {
-    height: 3px;
-    background-color: var(--primary-color);
+section h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section button {
+    background-color: var(--accent-color);
+    color: white;
     border: none;
-    margin: 20px 0 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section button:hover {
+    background-color: var(--primary-color);
 }
 
 /* Footer styling */
 footer {
-    margin-top: 20px;
-    color: white;
     background-color: var(--primary-color);
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-}
-
-/* Style for the color table */
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-th, td {
+    color: white;
     padding: 10px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
-
-th {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-td {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f0f0f0;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header h2 {
-        font-size: 1.1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main {
-        padding: 1em;
-    }
-
-    table {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.8rem;
-    }
-
-    header h2 {
-        font-size: 1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
+    border-radius: 8px;
+    margin-top: 20px;
 }

@@ -1,152 +1,118 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
-/* Root variables for colors and fonts */
+/* Root variables */
 :root {
     --primary-color: #f72585;
     --secondary-color: #b5179e;
-    --accent1-color: #7209b7;
-    --accent2-color: #480ca8;
+    --accent-color: #7209b7;
 
-    --heading-font: "IM Fell French Canon SC";
-    --paragraph-font: Lato, Helvetica, sans-serif;
+    --heading-font: 'IM Fell French Canon SC', serif;
+    --body-font: 'Lato', sans-serif;
 
-    --headline-color-on-white: #f72585;
-    --headline-color-on-color: white;
-    --paragraph-color-on-white: #f72585;
-    --paragraph-color-on-color: white;
-    --paragraph-background-color: #f72585;
-    --nav-link-color: #f72585;
-    --nav-background-color: #b5179e;
-    --nav-hover-link-color: white;
-    --nav-hover-background-color: #f72585;
+    --text-color: white;
 }
 
 /* General body styling */
 body {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2em;
-    font-size: 18px;
-    font-family: var(--paragraph-font);
-    color: var(--paragraph-color-on-white);
-    background-color: #3a3a3a;
-    text-align: left;
-}
-
-/* Image styling */
-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 300px;  /* Resizes the images to fit better */
+    font-family: var(--body-font);
+    background: url('retro-nostalgia.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-color);
+    text-align: center;
 }
 
 /* Header styling */
 header {
     background-color: var(--primary-color);
-    color: var(--headline-color-on-color);
+    color: var(--text-color);
     padding: 20px;
-    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
     margin: 0;
-    font-size: 2.5em;
 }
 
 header h2 {
-    margin: 5px 0;
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-/* Navigation styles */
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    background-color: var(--nav-background-color);
-    overflow: hidden;
-}
-
-nav ul li {
-    float: left;
 }
 
 nav ul li a {
-    display: block;
-    color: var(--nav-link-color);
-    text-align: center;
-    padding: 14px 20px;
     text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background-color: var(--nav-hover-background-color);
-    color: var(--nav-hover-link-color);
+    background-color: var(--accent-color);
 }
 
-/* Main content styling */
-main {
+/* Subpages Showcase Section */
+#subpages-showcase {
+    background-color: var(--secondary-color);
     padding: 20px;
-    background-color: rgb(59, 59, 59);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-h2, h3 {
+.subpage {
+    margin-bottom: 20px;
+}
+
+.subpage h3 {
     font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-h2 {
-    color: var(--primary-color);
-    text-align: center;
+.subpage p {
+    margin: 10px 0;
 }
 
-h3 {
-    color: var(--secondary-color);
+.subpage img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-p {
-    margin: 0 0 1em;
-}
-
-/* Horizontal rule styling */
-hr {
-    height: 3px;
-    background-color: var(--primary-color);
+.subpage button {
+    background-color: var(--accent-color);
+    color: white;
     border: none;
-    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subpage button:hover {
+    background-color: var(--primary-color);
 }
 
 /* Footer styling */
 footer {
-    margin-top: 20px;
-    color: white;
     background-color: var(--primary-color);
     padding: 10px;
-    text-align: center;
     border-radius: 8px;
-}
-
-/* New styles for the Buy & Sell Marketplace page */
-.trips-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.trip-item {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    text-align: center;
-}
-
-.trip-item img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
