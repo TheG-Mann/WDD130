@@ -3,12 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Game Resale - Game Reviews</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <title>Retro Resale - Game Reviews</title>
+    <link type="text/css" rel="stylesheet" href="reviews.css">
 </head>
 <body>
     <header>
-        <h1>Retro Game Resale</h1>
+        <h1>Retro Resale</h1>
         <h2>By G.Mann - WDD 130-01</h2>
         <nav>
             <ul>
@@ -26,6 +26,46 @@
             <h2>Game Reviews</h2>
             <p>Read reviews on your favorite retro games and share your experiences.</p>
             <!-- Game reviews content such as ratings, opinions, etc. could go here -->
+            <div class="game-reviews">
+                <h3>Featured Reviews</h3>
+                <ul>
+                    <li>
+                        <h4>The Legend of Zelda: Ocarina of Time</h4>
+                        <p>Rating: ★★★★★</p>
+                        <p>"An epic adventure that redefined the action-adventure genre. A must-play for any gamer!"</p>
+                    </li>
+                    <li>
+                        <h4>Super Mario 64</h4>
+                        <p>Rating: ★★★★☆</p>
+                        <p>"A groundbreaking 3D platformer that set the standard for future games. Fun and engaging!"</p>
+                    </li>
+                    <li>
+                        <h4>Final Fantasy VII</h4>
+                        <p>Rating: ★★★★★</p>
+                        <p>"A masterpiece of storytelling and character development. An unforgettable RPG experience!"</p>
+                    </li>
+                </ul>
+           </div>
+            <div class="submit-review">
+                <h3>Submit Your Review</h3>
+                <form action="submit_review.php" method="post">
+                    <label for="game-title">Game Title:</label>
+                    <input type="text" id="game-title" name="game-title" required>
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">★★★★★</option>
+                        <option value="4">★★★★☆</option>
+                        <option value="3">★★★☆☆</option>
+                        <option value="2">★★☆☆☆</option>
+                        <option value="1">★☆☆☆☆</option>
+                    </select>
+
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </form>
         </section>
     </main>
 
