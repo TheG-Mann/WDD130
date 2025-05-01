@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf6f0; /* Soft cream background */
+    color: #5c3d2e; /* Warm brown text */
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('sweet.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header Styling */
+header {
+    background-color: #f4d1c8; /* Soft pink */
+    color: #5c3d2e;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #5c3d2e;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f4d1c8;
+}
+
+/* Main Content */
+main {
+    background-color: #ffffff; /* White content area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: #d17a5c; /* Soft coral for headings */
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f4d1c8;
+    color: #5c3d2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+nav a:hover {
+    background-color: #d17a5c; /* Soft coral background on hover */
+    color: #ffffff; /* White text on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+}
+/* Logo Styling */
+header img {
+    max-width: 150px; /* Resize the logo to a reasonable width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the logo */
+}
+header {
+    max-width: 800px; /* Match the width of the main content */
+    margin: 0 auto; /* Center the header */
+}
+footer {
+    max-width: 800px; /* Match the width of the main content */
+    margin: 0 auto; /* Center the footer */
+}
