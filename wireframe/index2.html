@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navigation {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .image-scroller {
+            width: 100%;
+            height: 250px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hover-effect {
+            width: 100%;
+            padding: 50px;
+            background-color: #f4f4f4;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+        .hover-effect:hover {
+            border: 2px solid #000;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            width: 30%;
+            background-color: #ccc;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            margin-top: 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .box {
+            width: 22%;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navigation" style="background-color: white; color: black;"></header>
+        <div class="logo" style="width: 100px; height: 100px; background-color: black; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto; color: white;">
+            LOGO
+        </div>
+        <nav style="margin-top: 15px;">
+            <ul style="list-style: none; display: flex; justify-content: space-around; padding: 0; margin: 0;">
+                <li><a href="#" style="color: black; text-decoration: none; padding: 10px 20px;">Home</a></li>
+                <li><a href="#" style="color: black; text-decoration: none; padding: 10px 20px;">About</a></li>
+                <li><a href="#" style="color: black; text-decoration: none; padding: 10px 20px;">Services</a></li>
+                <li><a href="#" style="color: black; text-decoration: none; padding: 10px 20px;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Box Layout Integration -->
+    <div class="box-container">
+        <div class="row">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+        </div>
+        <div class="row">
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+            <div class="box">Box 7</div>
+            <div class="box">Box 8</div>
+        </div>
+    </div>
+    <script>
+        const boxes = document.querySelectorAll('.box');
+        boxes.forEach(box => {
+            box.addEventListener('mouseover', () => {
+                box.style.border = '2px solid #000';
+                box.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+            });
+            box.addEventListener('mouseout', () => {
+                box.style.border = 'none';
+                box.style.backgroundColor = '#ccc';
+            });
+        });
+    </script>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-item">
+                <div class="footer-item-header">Header 1</div>
+                <div class="footer-content">Content 1</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-item-header">Header 2</div>
+                <div class="footer-content">Content 2</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-item-header">Header 3</div>
+                <div class="footer-content">Content 3</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-item-header">Header 4</div>
+                <div class="footer-content">Content 4</div>
+            </div>
+        </div>
+    </footer>
+    <style>
+        .footer {
+            background-color: #666;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .footer-item {
+            text-align: center;
+            flex: 1;
+        }
+        .footer-item-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+ </body>
+</html>
